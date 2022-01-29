@@ -1,4 +1,4 @@
-class RiscvGnuToolchain < Formula
+class RiscvTheadGnuToolchain < Formula
   desc "RISC-V THead Compiler GNU Toolchain using newlib"
   homepage "http://riscv.org"
   url "https://github.com/T-head-Semi/gcc.git"
