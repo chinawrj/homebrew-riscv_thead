@@ -1,4 +1,4 @@
-class RiscvTools < Formula
+class RiscvTheadTools < Formula
   desc "RISC-V toolchain including gcc (with newlib), simulator (spike), and pk"
   homepage "http://riscv.org"
   url "https://github.com/riscv/riscv-tools/archive/homebrew.tar.gz"
