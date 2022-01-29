@@ -1,14 +1,8 @@
 class RiscvGnuToolchain < Formula
-  desc "RISC-V Compiler GNU Toolchain using newlib"
+  desc "RISC-V THead Compiler GNU Toolchain using newlib"
   homepage "http://riscv.org"
-  url "https://github.com/riscv/riscv-gnu-toolchain.git"
-  version "main"
-
-  bottle do
-    root_url "http://riscv.org.s3.amazonaws.com/bottles"
-    rebuild 8
-    sha256 monterey: "9fe9c2113a60e9e0ceac29e7c7992001959b20a09c44c1a2781c0c90939489b8"
-  end
+  url "https://github.com/T-head-Semi/gcc.git"
+  version "xuantie-gcc-10.2.0"
 
   # enabling multilib by default, must choose to build without
   option "with-NOmultilib", "Build WITHOUT multilib support"
@@ -40,9 +34,9 @@ class RiscvGnuToolchain < Formula
     system "make"
 
     # don't install Python bindings if system already has them
-    if File.exist?("#{HOMEBREW_PREFIX}/share/gcc-11.1.0")
-      opoo "Not overwriting share/gcc-11.1.0"
-      rm_rf "#{share}/gcc-11.1.0"
+    if File.exist?("#{HOMEBREW_PREFIX}/share/gcc-10.2.0")
+      opoo "Not overwriting share/gcc-10.2.0"
+      rm_rf "#{share}/gcc-10.2.0"
     end
 
     # don't install gdb bindings if system already has them

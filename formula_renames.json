@@ -1,4 +1,4 @@
 {
-  "riscv-gcc": "riscv-gnu-toolchain"
+  "riscv_thead-gcc": "riscv_thead-gnu-toolchain"
 }
 

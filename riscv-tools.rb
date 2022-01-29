@@ -6,9 +6,7 @@ class RiscvTools < Formula
   sha256 "cb919eb7cf11071c6d11c721a9e77893a2dbe9158466e444eb3dd8476a89b7b4"
 
   # install rest of tools
-  depends_on "riscv-gnu-toolchain"
-  depends_on "riscv-isa-sim"
-  depends_on "riscv-pk"
+  depends_on "riscv_thead-gnu-toolchain"
 
   def install
     prefix.install "build.common"
