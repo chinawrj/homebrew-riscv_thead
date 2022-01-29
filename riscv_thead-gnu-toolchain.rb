@@ -1,8 +1,9 @@
 class RiscvTheadGnuToolchain < Formula
   desc "RISC-V THead Compiler GNU Toolchain using newlib"
   homepage "http://riscv.org"
-  url "https://github.com/T-head-Semi/gcc.git"
+  url "https://github.com/T-head-Semi/xuantie-gnu-toolchain.git"
   version "xuantie-gcc-10.2.0"
+  head "https://github.com/T-head-Semi/xuantie-gnu-toolchain.git", branch: "xuantie-gcc-10.2.0"
 
   # enabling multilib by default, must choose to build without
   option "with-NOmultilib", "Build WITHOUT multilib support"
